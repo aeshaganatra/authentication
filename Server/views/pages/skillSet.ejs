@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <%- include ../partials/navbar.ejs %>
+
+  <%- include ../partials/header.ejs %>
+
+
+<div class="container">
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Academic Projects</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Banking Application</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">"Used .Net Framework and Windows Forms to mimic a banking application, create chequing or visa accounts, and storing them in a list
+          Applied inheritance to develop a parent-child relationship between the classes"</div>
+          <img src="/Content/banking1.png" alt="Artwork 0" width="200" height="200">
+      </div>
+
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">College Student Database</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Developed Java GUI based MVC application, performing CRUD operations & storing data in the database
+          Used Triggers and Procedures to manage the backend database and retrieve reports for professors
+          </div>
+          <img src="/Content/banking.png" alt="Artwork 0" width="200" height="200">
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Disk Increase Script</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Using Shell scripting to develop a utility that identifies and resizes GCP disks attached to Linux servers in a click</div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+</body>
+  <%- include ../partials/footer.ejs %>
+
+</html>

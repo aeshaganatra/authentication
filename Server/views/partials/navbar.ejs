@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/Content/app.css' />
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+
+  </head>
+  <body>
+      
+<!--We are now copying the navigation bar code from internet as below-->
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2e6892;">
+    <div class="pixgrid clearfix">
+      <img src="/Content/logo.jpg" alt="Artwork 1" width="50" height="50">
+    </div>
+    <a class="navbar-brand" href="/">Aesha Ganatra</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Homepage<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/skillSet">Projects<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/aboutMe">About Me<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contactMe">Contact<span class="sr-only">(current)</span></a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services<span class="sr-only">(current)</span></a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-list">Contact List<span class="sr-only">(current)</span></a>
+        </li>
+
+        <% if(typeof displayName == 'string' && displayName) { %>
+          <li class="navbar-brand"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
+          <li class="nav-item"><a href="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt "></i> Logout</a></li>
+        <% } else { %>
+          <li class="nav-item"><a href="/login" class="nav-link">
+            <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+        <% } %>
+
+      </ul>
+    </div>
+  </nav>
+  

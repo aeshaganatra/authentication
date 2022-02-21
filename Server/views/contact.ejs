@@ -1,0 +1,40 @@
+<%- include partials/navbar.ejs %>
+<%- include partials/header.ejs %>
+
+<main class="container">
+  <div class="row">
+    <div class="offset-md-0 col-md-10">
+      <h1><%-title %> </h1>
+      <a href ="/contact-list/add" class = "btn btn-primary" role ="button">
+      <i class ="fas fa-plus-circle">Add a Contact</i>
+      </a>
+      <br>
+      <table class="table table-bordered table-striped table-hover">
+        <tr class="d-flex" >
+            <th class= "text-center col-2"> Name</th>
+            <th class= "text-center col-2"> Number</th>
+            <th class= "text-center col-6"> Email</th>
+            <th class= "text-center col-2"></th>
+            <th class= "text-center col-2"></th>
+            
+        </tr>
+        <% for (let index = 0; index < ContactList.length; index++) { %>
+          <tr class="d-flex">  
+            <td class = "text-center col-2"><%=ContactList[index].name %> </td>     
+            <td class = "text-center col-2"><%=ContactList[index].number %> </td>           
+            <td class = "text-center col-6"><%=ContactList[index].email %> </td>  
+            <td class = "text-center col-2">
+              <a href="/contact-list/edit/<%=ContactList[index]._id %>"class="btn btn-primary btn-sm">
+              <i class ="fas fa-pencil-alt"></i>Edit</a></td>    
+              <td class = "text-center col-2">
+                <a href="/contact-list/delete/<%=ContactList[index]._id %>"class="btn btn-danger btn-sm">
+                <i class ="fas fa-trash-alt"></i>Delete</a></td>       
+         </tr>  
+    <% } %>
+      </table>
+    </div>
+  </div>
+</main>
+
+
+<%- include partials/footer.ejs %>

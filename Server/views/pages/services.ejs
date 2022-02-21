@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <%- include ../partials/navbar.ejs %>
+  <%- include ../partials/header.ejs %>
+
+
+<div class="container">
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Services</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Java Programming</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">I have closely worked around the lifecycle of developing and supporting a web application, logging application defects, and sharing relevant stack traces using JIRA with developers for debugging with organizations like Ericsson and Ultimate Kronos Group respectively. I worked on two major projects in my academics, utilizing concepts like Inheritance, Generics, Delegation, and Exception handling; created an Oracle database, to act as backend storage</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Bash Scripting</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">I have a deep interest in bash scripting and have worked intensively on Cloud Linux servers and databases. Recently, I developed a utility that identifies and resizes GCP disks attached to Linux servers in a click</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Student Ambassador with Centennial College</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Assist students to transition through their 1st semester with issues: Registration, Financial Aid, Admissions
+            Seek to understand the issue and perform initial level triage to assign tickets to respective departments
+            Guide students to build their timetable, balancing between virtual and on-campus labs
+            </div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+</body>
+  <%- include ../partials/footer.ejs %>
+
+</html>
